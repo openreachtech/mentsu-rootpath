@@ -2,7 +2,7 @@
 
 # Overview
 
-This provides class for generating directories and files with relative positions from the project root in ECMAScript Modules development environments.
+This provides the class for generating directories and files with relative positions from the project root in ECMAScript Modules development environments.
 
 # Installation
 
