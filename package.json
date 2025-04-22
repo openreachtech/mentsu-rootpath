@@ -22,6 +22,9 @@
   ],
   "author": "Open Reach Tech inc.",
   "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/openreachtech/mentsu-rootpath/issues"
+  },
   "devDependencies": {
     "@openreachtech/eslint-config": "^3.0.2",
     "@openreachtech/jest-constructor-spy": "^1.1.0",
