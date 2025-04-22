@@ -1,0 +1,31 @@
+{
+  "name": "@openreachtech/renchan-module-template",
+  "version": "0.0.0",
+  "description": "Based on renchan-module-template version 0.0.0",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "lib/",
+    "types/"
+  ],
+  "scripts": {
+    "l": "npm run lint",
+    "lint": "eslint .",
+    "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; export NODE_ENV=development; jest --forceExit --maxWorkers=5"
+  },
+  "keywords": [
+    "renchan"
+  ],
+  "author": "Open Reach Tech inc.",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@openreachtech/eslint-config": "^3.0.2",
+    "@openreachtech/jest-constructor-spy": "^1.1.0",
+    "@openreachtech/renchan-test-tools": "^1.0.0",
+    "@stylistic/eslint-plugin-js": "^2.9.0",
+    "@stylistic/eslint-plugin-plus": "^2.9.0",
+    "@types/jest": "^29.5.14",
+    "eslint": "^9.25.1",
+    "jest": "^29.7.0"
+  }
+}
