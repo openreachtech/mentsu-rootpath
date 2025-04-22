@@ -1,5 +1,5 @@
 {
-  "name": "@openreachtech/renchan-module-template",
+  "name": "@openreachtech/mentsu-rootpath",
   "version": "0.0.0",
   "description": "Based on renchan-module-template version 0.0.0",
   "type": "module",
@@ -13,11 +13,19 @@
     "lint": "eslint .",
     "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; export NODE_ENV=development; jest --forceExit --maxWorkers=5"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openreachtech/mentsu-rootpath.git"
+  },
   "keywords": [
     "renchan"
   ],
   "author": "Open Reach Tech inc.",
   "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/openreachtech/mentsu-rootpath/issues"
+  },
+  "homepage": "https://github.com/openreachtech/mentsu-rootpath#readme",
   "devDependencies": {
     "@openreachtech/eslint-config": "^3.0.2",
     "@openreachtech/jest-constructor-spy": "^1.1.0",
