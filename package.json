@@ -1,12 +1,11 @@
 {
   "name": "@openreachtech/mentsu-rootpath",
   "version": "0.0.0",
-  "description": "Based on renchan-module-template version 0.0.0",
+  "description": "Resolve root path in ECMAScript Modules",
   "type": "module",
   "main": "index.js",
   "files": [
-    "lib/",
-    "types/"
+    "lib/"
   ],
   "scripts": {
     "l": "npm run lint",
