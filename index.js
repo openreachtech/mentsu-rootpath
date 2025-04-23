@@ -1,1 +1,10 @@
-export { default as RootPath } from './lib/RootPath.js'
+import RootPath from './lib/RootPath.js'
+
+const rootPath = RootPath.create()
+
+export {
+  RootPath,
+  rootPath,
+}
+
+export default rootPath
