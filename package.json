@@ -27,7 +27,7 @@
   "homepage": "https://github.com/openreachtech/mentsu-rootpath#readme",
   "devDependencies": {
     "@openreachtech/eslint-config": "^3.0.2",
-    "@openreachtech/jest-constructor-spy": "^1.1.0",
+    "@openreachtech/jest-constructor-spy": "^1.1.1",
     "@openreachtech/renchan-test-tools": "^1.0.0",
     "@stylistic/eslint-plugin-js": "^2.9.0",
     "@stylistic/eslint-plugin-plus": "^2.9.0",
