@@ -75,8 +75,8 @@ npm test
 
 # Developer
 
-[Open Reach Tech inc.](https://openreach.tech)
+[Open Reach Tech Inc.](https://openreach.tech)
 
 # Copyright
 
-© 2025 Open Reach Tech inc.
+© 2025 Open Reach Tech Inc.
