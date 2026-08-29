@@ -17,6 +17,6 @@ globalThis.constructorSpy = ConstructorSpy.create({
 /*
  * Set global hooks.
  */
-afterEach(() => { // eslint-disable-line jest/require-top-level-describe
+afterEach(() => {
   jest.restoreAllMocks()
 })
