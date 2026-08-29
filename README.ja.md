@@ -13,16 +13,6 @@ Node.jsが必要です。まだインストールされていない場合は、�
 | Node.js | ^20.14.0 |
 | npm | ^10.9.2 |
 
-## `.npmrc` のセットアップ
-
-プロジェクトのルートディレクトリに `.npmrc` ファイルを作成し、必要な設定を追加してください。
-
-`.npmrc` ファイルに以下の行を追加してください。
-
-```
-@openreachtech:registry=https://npm.pkg.github.com
-```
-
 ## コマンド
 
 以下のコマンドで `mentsu-rootpath` をインストールできます：
