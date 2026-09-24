@@ -31,5 +31,8 @@
     "@types/jest": "^30.0.0",
     "eslint": "^9.39.5",
     "jest": "^30.5.1"
+  },
+  "allowScripts": {
+    "@parcel/watcher": false
   }
 }
