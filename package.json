@@ -32,6 +32,9 @@
     "eslint": "^9.39.5",
     "jest": "^30.5.1"
   },
+  "overrides": {
+    "@humanfs/node": "^0.16.8"
+  },
   "allowScripts": {
     "@parcel/watcher": false,
     "unrs-resolver@1.12.2": true
