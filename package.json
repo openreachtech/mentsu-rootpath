@@ -33,6 +33,7 @@
     "jest": "^30.5.1"
   },
   "allowScripts": {
-    "@parcel/watcher": false
+    "@parcel/watcher": false,
+    "unrs-resolver@1.12.2": true
   }
 }
