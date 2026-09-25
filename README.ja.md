@@ -53,10 +53,9 @@ console.log(
 
 ## コントリビューション
 
-バグレポート、機能リクエスト、コード貢献を歓迎します。
+バグ報告・機能要望・コード貢献を歓迎します。
 
-GitHub の Issues を通じてお気軽にご連絡ください。
-
+GitHub Issues からお気軽にご連絡ください。
 
 ```sh
 git clone https://github.com/openreachtech/mentsu-rootpath.git
@@ -68,9 +67,9 @@ npm test
 
 ## ライセンス
 
-このプロジェクトは Apache License 2.0 の下でリリースされています。
+本プロジェクトは Apache License 2.0 で公開されています。
 
-詳細は [LICENSE](./LICENSE) をご覧ください。
+詳細は [LICENSE ファイル](./LICENSE) を参照してください。
 
 ## 開発者
 
