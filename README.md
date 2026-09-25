@@ -42,6 +42,57 @@ console.log(
 // '/User/your-name/another-project/app/tools/target.js'
 ```
 
+## API
+
+Class members are written with the following notation.
+
+| notation | members |
+| :-- | :-- |
+| `#instanceProperty` | instance property |
+| `#instanceMethod()` | instance method |
+| `#get:instanceGetter` | instance getter |
+| `#set:instanceSetter` | instance setter |
+| `.staticProperty` | static property |
+| `.staticMethod()` | static method |
+| `.get:staticGetter` | static getter |
+| `.set:staticSetter` | static setter |
+
+### Exports
+
+| export | description |
+| :-- | :-- |
+| `default` | The instance of `RootPath` created by `RootPath.create()` when the package is first imported. |
+| `rootPath` | The same instance as `default`. |
+| `RootPath` | The class. |
+
+### `.create()`
+
+Factory method that returns a new instance.
+
+```js
+RootPath.create({ base })
+```
+
+| parameter | type | default | description |
+| :-- | :-- | :-- | :-- |
+| `base` | `string` | `process.cwd()` | The directory paths are resolved against. |
+
+Returns a `RootPath` instance.
+
+### `#to()`
+
+Resolves a path against `base` with [`path.resolve()`](https://nodejs.org/api/path.html#pathresolvepaths).
+
+```js
+rootPath.to(targetPath)
+```
+
+| parameter | type | description |
+| :-- | :-- | :-- |
+| `targetPath` | `string` | The path to resolve. An absolute path is returned as it is, normalized. |
+
+Returns the absolute path as a `string`, without a trailing slash.
+
 ## Contribution
 
 Bug reports, feature requests, and code contributions are welcome.

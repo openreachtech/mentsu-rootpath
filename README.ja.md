@@ -42,6 +42,57 @@ console.log(
 // '/User/your-name/another-project/app/tools/target.js'
 ```
 
+## API
+
+クラスメンバーは以下の表記に従って記述します。
+
+| notation | members |
+| :-- | :-- |
+| `#instanceProperty` | instance property |
+| `#instanceMethod()` | instance method |
+| `#get:instanceGetter` | instance getter |
+| `#set:instanceSetter` | instance setter |
+| `.staticProperty` | static property |
+| `.staticMethod()` | static method |
+| `.get:staticGetter` | static getter |
+| `.set:staticSetter` | static setter |
+
+### エクスポート
+
+| export | 説明 |
+| :-- | :-- |
+| `default` | パッケージを最初にインポートした時点で `RootPath.create()` により生成される `RootPath` のインスタンス。 |
+| `rootPath` | `default` と同じインスタンス。 |
+| `RootPath` | クラス本体。 |
+
+### `.create()`
+
+新しいインスタンスを返すファクトリーメソッドです。
+
+```js
+RootPath.create({ base })
+```
+
+| パラメーター | 型 | デフォルト | 説明 |
+| :-- | :-- | :-- | :-- |
+| `base` | `string` | `process.cwd()` | パスを解決する基準のディレクトリ。 |
+
+`RootPath` のインスタンスを返します。
+
+### `#to()`
+
+[`path.resolve()`](https://nodejs.org/api/path.html#pathresolvepaths) で、`base` を基準にパスを解決します。
+
+```js
+rootPath.to(targetPath)
+```
+
+| パラメーター | 型 | 説明 |
+| :-- | :-- | :-- |
+| `targetPath` | `string` | 解決するパス。絶対パスは正規化したうえでそのまま返します。 |
+
+末尾のスラッシュを含まない絶対パスを `string` で返します。
+
 ## コントリビューション
 
 バグ報告・機能要望・コード貢献を歓迎します。
