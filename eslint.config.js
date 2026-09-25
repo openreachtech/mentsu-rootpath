@@ -16,15 +16,6 @@ export default [
     },
   },
 
-  {
-    files: [
-      '**/*.cjs',
-    ],
-    languageOptions: {
-      sourceType: 'commonjs',
-    },
-  },
-
   // Turn off some rules temporary
   {
     rules: {
