@@ -23,10 +23,12 @@ npm install @openreachtech/mentsu-rootpath
 
 # 使い方
 
+default export は、`process.cwd()` を基準に解決する `RootPath` のインスタンスです。基準はパッケージを最初にインポートした時点で決まります。同じインスタンスは `rootPath` としても export されています。
+
 プロジェクトルートが `/User/your-name/project-name/` とします。
 
 ```
-const rootPath = RootPath.create()
+import rootPath from '@openreachtech/mentsu-rootpath'
 
 console.log(
   rootPath.to('app/tools/')
@@ -34,13 +36,19 @@ console.log(
 // '/User/your-name/project-name/app/tools'
 ```
 
+別のディレクトリを基準にする場合は、`base` を渡してインスタンスを生成します。
+
 ```
-const rootPath = RootPath.create()
+import { RootPath } from '@openreachtech/mentsu-rootpath'
+
+const alphaRootPath = RootPath.create({
+  base: '/User/your-name/another-project/',
+})
 
 console.log(
-  rootPath.to('app/tools/target.js')
+  alphaRootPath.to('app/tools/target.js')
 )
-// '/User/your-name/project-name/app/tools/target.js'
+// '/User/your-name/another-project/app/tools/target.js'
 ```
 
 # ライセンス

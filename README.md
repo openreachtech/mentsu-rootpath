@@ -23,10 +23,12 @@ npm install @openreachtech/mentsu-rootpath
 
 # Usage
 
+The default export is an instance of `RootPath` that resolves against `process.cwd()`, taken when the package is first imported. The same instance is also exported as `rootPath`.
+
 When your project root path is `/User/your-name/project-name/`:
 
 ```
-const rootPath = RootPath.create()
+import rootPath from '@openreachtech/mentsu-rootpath'
 
 console.log(
   rootPath.to('app/tools/')
@@ -34,13 +36,19 @@ console.log(
 // '/User/your-name/project-name/app/tools'
 ```
 
+To resolve against another directory, create an instance with `base`:
+
 ```
-const rootPath = RootPath.create()
+import { RootPath } from '@openreachtech/mentsu-rootpath'
+
+const alphaRootPath = RootPath.create({
+  base: '/User/your-name/another-project/',
+})
 
 console.log(
-  rootPath.to('app/tools/target.js')
+  alphaRootPath.to('app/tools/target.js')
 )
-// '/User/your-name/project-name/app/tools/target.js'
+// '/User/your-name/another-project/app/tools/target.js'
 ```
 
 # License
