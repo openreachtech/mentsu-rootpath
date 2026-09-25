@@ -25,12 +25,6 @@ export default [
     },
   },
 
-  {
-    ignores: [
-      'playground/**',
-    ],
-  },
-
   // Turn off some rules temporary
   {
     rules: {
