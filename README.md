@@ -4,7 +4,7 @@ This provides the class for resolving paths relative to the project root into ab
 
 ## Installation
 
-Requires Node.js 20.x (the version the CI builds against).
+Requires Node.js 20.0.0 or later and npm 11.16.0 or later.
 
 ```sh
 npm install @openreachtech/mentsu-rootpath

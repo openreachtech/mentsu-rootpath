@@ -4,7 +4,7 @@ ECMAScript Modules の開発環境で、プロジェクトルートからの相�
 
 ## インストール
 
-Node.js 20.x が必要です（CI がビルド対象とするバージョン）。
+Node.js 20.0.0 以上と npm 11.16.0 以上が必要です。
 
 ```sh
 npm install @openreachtech/mentsu-rootpath
