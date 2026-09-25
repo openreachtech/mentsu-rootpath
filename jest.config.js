@@ -2,10 +2,6 @@ export default {
   setupFilesAfterEnv: [
     '<rootDir>/tests/setup-after-env.js',
   ],
-  moduleNameMapper: {
-    '^(@.*)$': '<rootDir>/node_modules/$1',
-    '^~/(.*)$': '<rootDir>/$1',
-  },
   testPathIgnorePatterns: [
     '/node_modules/',
   ],
