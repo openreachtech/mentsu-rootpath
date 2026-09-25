@@ -31,7 +31,7 @@ const rootPath = RootPath.create()
 console.log(
   rootPath.to('app/tools/')
 )
-// '//User/your-name/project-name/app/tools'
+// '/User/your-name/project-name/app/tools'
 ```
 
 ```
@@ -40,7 +40,7 @@ const rootPath = RootPath.create()
 console.log(
   rootPath.to('app/tools/target.js')
 )
-// '//User/your-name/project-name/app/tools/target.js'
+// '/User/your-name/project-name/app/tools/target.js'
 ```
 
 # License
