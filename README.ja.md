@@ -1,10 +1,10 @@
 # mentsu-rootpath
 
-# 概要
+## 概要
 
 ECMAScript Modules の開発環境で、プロジェクトルートからの相対パスを絶対パスに解決するクラスを提供します。
 
-# インストール
+## インストール
 
 Node.jsが必要です。まだインストールされていない場合は、先にインストールしてください。
 
@@ -13,7 +13,7 @@ Node.jsが必要です。まだインストールされていない場合は、�
 | Node.js | ^20.14.0 |
 | npm | ^10.9.2 |
 
-## コマンド
+### コマンド
 
 以下のコマンドで `mentsu-rootpath` をインストールできます：
 
@@ -21,7 +21,7 @@ Node.jsが必要です。まだインストールされていない場合は、�
 npm install @openreachtech/mentsu-rootpath
 ```
 
-# 使い方
+## 使い方
 
 default export は、`process.cwd()` を基準に解決する `RootPath` のインスタンスです。基準はパッケージを最初にインポートした時点で決まります。同じインスタンスは `rootPath` としても export されています。
 
@@ -51,13 +51,13 @@ console.log(
 // '/User/your-name/another-project/app/tools/target.js'
 ```
 
-# ライセンス
+## ライセンス
 
 このプロジェクトは Apache License 2.0 の下でリリースされています。
 
 詳細は [LICENSE](./LICENSE) をご覧ください。
 
-# コントリビューション
+## コントリビューション
 
 バグレポート、機能リクエスト、コード貢献を歓迎します。
 
@@ -72,10 +72,10 @@ npm run lint
 npm test
 ```
 
-# 開発者
+## 開発者
 
 [Open Reach Tech Inc.](https://openreach.tech)
 
-# 著作権
+## 著作権
 
 © 2025 Open Reach Tech Inc.

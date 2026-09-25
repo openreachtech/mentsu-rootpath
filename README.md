@@ -1,10 +1,10 @@
 # mentsu-rootpath
 
-# Overview
+## Overview
 
 This provides the class for resolving paths relative to the project root into absolute paths in ECMAScript Modules development environments.
 
-# Installation
+## Installation
 
 Node.js is required. If you haven't installed it yet, please install it first.
 
@@ -13,7 +13,7 @@ Node.js is required. If you haven't installed it yet, please install it first.
 | Node.js | ^20.14.0 |
 | npm | ^10.9.2 |
 
-## Command
+### Command
 
 You can install `mentsu-rootpath` with the following command:
 
@@ -21,7 +21,7 @@ You can install `mentsu-rootpath` with the following command:
 npm install @openreachtech/mentsu-rootpath
 ```
 
-# Usage
+## Usage
 
 The default export is an instance of `RootPath` that resolves against `process.cwd()`, taken when the package is first imported. The same instance is also exported as `rootPath`.
 
@@ -51,13 +51,13 @@ console.log(
 // '/User/your-name/another-project/app/tools/target.js'
 ```
 
-# License
+## License
 
 This project is released under the Apache License 2.0.
 
 For more details, please see [in the LICENSE file](./LICENSE).
 
-# Contribution
+## Contribution
 
 Bug reports, feature requests, and code contributions are welcome.
 
@@ -71,10 +71,10 @@ npm run lint
 npm test
 ```
 
-# Developer
+## Developer
 
 [Open Reach Tech Inc.](https://openreach.tech)
 
-# Copyright
+## Copyright
 
 © 2025 Open Reach Tech Inc.
