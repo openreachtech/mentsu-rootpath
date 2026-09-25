@@ -2,30 +2,18 @@
   "words": [
     "openreach",
     "openreachtech",
-    "steweucen",
-    "furo",
     "mentsu",
     "renchan",
-
-    "sequelize",
-    "bignumber",
-    "smallint",
-    "tinyint",
-    "subquery",
-    "subqueries",
-
-    "graphql",
-    "jsdoc",
-    "nuxt",
-    "nuxtjs",
 
     "ehthumbs",
     "encryptable",
 
-    "graphiql",
-    "linebreak",
-    "restfulapi",
-    "scandir",
-    "terminalize"
+    "codenames",
+    "hostnames",
+
+    "esac",
+    "humanfs",
+    "npmjs",
+    "unbumped"
   ]
 }
