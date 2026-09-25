@@ -5,10 +5,4 @@ export default {
   testPathIgnorePatterns: [
     '/node_modules/',
   ],
-  transform: {
-    '^.+\\.js$': 'babel-jest',
-  },
-  transformIgnorePatterns: [
-    '<rootDir>/node_modules/',
-  ],
 }
