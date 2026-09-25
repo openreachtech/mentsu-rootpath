@@ -21,26 +21,4 @@ export default [
       'jsdoc/valid-types': 'off',
     },
   },
-
-  // Enable rules for specific files
-  {
-    rules: {
-      'no-shadow': [
-        'error',
-        {
-          builtinGlobals: true, // false
-          hoist: 'all', // 'functions'
-          ignoreOnInitialization: true, // false
-          allow: [ // []
-            'it',
-            'length',
-            'name',
-            'status',
-            'target',
-            'require', // add it from openreachtech-eslint-config
-          ],
-        },
-      ],
-    },
-  },
 ]
