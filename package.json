@@ -6,7 +6,8 @@
   "main": "lib/index.js",
   "files": [
     "lib/",
-    "types/"
+    "types/",
+    "!types/env/**"
   ],
   "types": "./types/index.d.ts",
   "scripts": {
