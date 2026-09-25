@@ -6,7 +6,8 @@
   "main": "lib/index.js",
   "files": [
     "lib/",
-    "types/"
+    "types/",
+    "!types/env/**"
   ],
   "types": "./types/index.d.ts",
   "scripts": {
@@ -34,6 +35,8 @@
   "devDependencies": {
     "@openreachtech/eslint-config": "^4.5.0",
     "@openreachtech/jest-constructor-spy": "^1.1.2",
+    "@openreachtech/jest-deep-containing": "^1.0.2",
+    "@openreachtech/jest-expect-each": "^1.0.3",
     "@types/jest": "^30.0.0",
     "eslint": "^9.39.5",
     "jest": "^30.5.1"
