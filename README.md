@@ -18,7 +18,7 @@ The default export is an instance of `RootPath` that resolves against `process.c
 
 When your project root path is `/User/your-name/project-name/`:
 
-```
+```js
 import rootPath from '@openreachtech/mentsu-rootpath'
 
 console.log(
@@ -29,7 +29,7 @@ console.log(
 
 To resolve against another directory, create an instance with `base`:
 
-```
+```js
 import { RootPath } from '@openreachtech/mentsu-rootpath'
 
 const alphaRootPath = RootPath.create({

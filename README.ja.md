@@ -18,7 +18,7 @@ default export は、`process.cwd()` を基準に解決する `RootPath` のイ�
 
 プロジェクトルートが `/User/your-name/project-name/` とします。
 
-```
+```js
 import rootPath from '@openreachtech/mentsu-rootpath'
 
 console.log(
@@ -29,7 +29,7 @@ console.log(
 
 別のディレクトリを基準にする場合は、`base` を渡してインスタンスを生成します。
 
-```
+```js
 import { RootPath } from '@openreachtech/mentsu-rootpath'
 
 const alphaRootPath = RootPath.create({
