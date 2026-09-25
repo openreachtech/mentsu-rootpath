@@ -10,7 +10,7 @@
   "scripts": {
     "l": "npm run lint",
     "lint": "eslint .",
-    "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; export NODE_ENV=development; jest --forceExit --maxWorkers=5"
+    "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; export NODE_ENV=development; jest --maxWorkers=5"
   },
   "repository": {
     "type": "git",
