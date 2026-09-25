@@ -1,20 +1,7 @@
-import globals from 'globals'
-
 import openreachtechConfig from '@openreachtech/eslint-config'
 
 export default [
   ...openreachtechConfig,
-
-  // Override rules after extending the Openreach Tech config
-  {
-    languageOptions: {
-      sourceType: 'module',
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
-    },
-  },
 
   // Turn off some rules temporary
   {
