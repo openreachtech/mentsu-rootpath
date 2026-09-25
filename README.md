@@ -1,55 +1,99 @@
 # mentsu-rootpath
 
-# Overview
+This provides the class for resolving paths relative to the project root into absolute paths in ECMAScript Modules development environments.
 
-This provides the class for generating directories and files with relative positions from the project root in ECMAScript Modules development environments.
+## Installation
 
-# Installation
+Requires Node.js 20.0.0 or later and npm 11.16.0 or later.
 
-Node.js is required. If you haven't installed it yet, please install it first.
-
-| Tool | Version |
-| :-- | :-- |
-| Node.js | ^20.14.0 |
-| npm | ^10.9.2 |
-
-## Command
-
-You can install `mentsu-rootpath` with the following command:
-
-```
+```sh
 npm install @openreachtech/mentsu-rootpath
 ```
 
-# Usage
+It is an ES module (`"type": "module"`); import it with ESM `import` syntax.
+
+## Usage
+
+The default export is an instance of `RootPath` that resolves against `process.cwd()`, taken when the package is first imported. The same instance is also exported as `rootPath`.
 
 When your project root path is `/User/your-name/project-name/`:
 
-```
-const rootPath = RootPath.create()
+```js
+import rootPath from '@openreachtech/mentsu-rootpath'
 
 console.log(
   rootPath.to('app/tools/')
 )
-// '//User/your-name/project-name/app/tools'
+// '/User/your-name/project-name/app/tools'
 ```
 
-```
-const rootPath = RootPath.create()
+To resolve against another directory, create an instance with `base`:
+
+```js
+import { RootPath } from '@openreachtech/mentsu-rootpath'
+
+const alphaRootPath = RootPath.create({
+  base: '/User/your-name/another-project/',
+})
 
 console.log(
-  rootPath.to('app/tools/target.js')
+  alphaRootPath.to('app/tools/target.js')
 )
-// '//User/your-name/project-name/app/tools/target.js'
+// '/User/your-name/another-project/app/tools/target.js'
 ```
 
-# License
+## API
 
-This project is released under the Apache License 2.0.
+Class members are written with the following notation.
 
-For more details, please see [in the LICENSE file](./LICENSE).
+| notation | members |
+| :-- | :-- |
+| `#instanceProperty` | instance property |
+| `#instanceMethod()` | instance method |
+| `#get:instanceGetter` | instance getter |
+| `#set:instanceSetter` | instance setter |
+| `.staticProperty` | static property |
+| `.staticMethod()` | static method |
+| `.get:staticGetter` | static getter |
+| `.set:staticSetter` | static setter |
 
-# Contribution
+### Exports
+
+| export | description |
+| :-- | :-- |
+| `default` | The instance of `RootPath` created by `RootPath.create()` when the package is first imported. |
+| `rootPath` | The same instance as `default`. |
+| `RootPath` | The class. |
+
+### `.create()`
+
+Factory method that returns a new instance.
+
+```js
+RootPath.create({ base })
+```
+
+| parameter | type | default | description |
+| :-- | :-- | :-- | :-- |
+| `base` | `string` | `process.cwd()` | The directory paths are resolved against. |
+
+Returns a `RootPath` instance.
+
+### `#to()`
+
+Resolves a path against `base` with [`path.resolve()`](https://nodejs.org/api/path.html#pathresolvepaths).
+
+```js
+rootPath.to(targetPath)
+```
+
+| parameter | type | description |
+| :-- | :-- | :-- |
+| `targetPath` | `string` | The path to resolve. An absolute path is returned as it is, normalized. |
+
+Returns the absolute path as a `string`, without a trailing slash.
+
+## Contribution
 
 Bug reports, feature requests, and code contributions are welcome.
 
@@ -63,10 +107,16 @@ npm run lint
 npm test
 ```
 
-# Developer
+## License
+
+This project is released under the Apache License 2.0.
+
+For more details, please see [in the LICENSE file](./LICENSE).
+
+## Developer
 
 [Open Reach Tech Inc.](https://openreach.tech)
 
-# Copyright
+## Copyright
 
 © 2025 Open Reach Tech Inc.
