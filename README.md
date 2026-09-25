@@ -1,7 +1,5 @@
 # mentsu-rootpath
 
-## Overview
-
 This provides the class for resolving paths relative to the project root into absolute paths in ECMAScript Modules development environments.
 
 ## Installation

@@ -1,7 +1,5 @@
 # mentsu-rootpath
 
-## 概要
-
 ECMAScript Modules の開発環境で、プロジェクトルートからの相対パスを絶対パスに解決するクラスを提供します。
 
 ## インストール
