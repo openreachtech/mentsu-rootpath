@@ -51,12 +51,6 @@ console.log(
 // '/User/your-name/another-project/app/tools/target.js'
 ```
 
-## ライセンス
-
-このプロジェクトは Apache License 2.0 の下でリリースされています。
-
-詳細は [LICENSE](./LICENSE) をご覧ください。
-
 ## コントリビューション
 
 バグレポート、機能リクエスト、コード貢献を歓迎します。
@@ -71,6 +65,12 @@ npm install
 npm run lint
 npm test
 ```
+
+## ライセンス
+
+このプロジェクトは Apache License 2.0 の下でリリースされています。
+
+詳細は [LICENSE](./LICENSE) をご覧ください。
 
 ## 開発者
 
