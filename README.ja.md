@@ -4,20 +4,13 @@ ECMAScript Modules の開発環境で、プロジェクトルートからの相�
 
 ## インストール
 
-Node.jsが必要です。まだインストールされていない場合は、先にインストールしてください。
+Node.js 20.x が必要です（CI がビルド対象とするバージョン）。
 
-| ツール | バージョン |
-| :-- | :-- |
-| Node.js | ^20.14.0 |
-| npm | ^10.9.2 |
-
-### コマンド
-
-以下のコマンドで `mentsu-rootpath` をインストールできます：
-
-```
+```sh
 npm install @openreachtech/mentsu-rootpath
 ```
+
+ES モジュール（`"type": "module"`）です。ESM の `import` 構文でインポートしてください。
 
 ## 使い方
 

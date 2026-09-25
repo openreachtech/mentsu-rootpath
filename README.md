@@ -4,20 +4,13 @@ This provides the class for resolving paths relative to the project root into ab
 
 ## Installation
 
-Node.js is required. If you haven't installed it yet, please install it first.
+Requires Node.js 20.x (the version the CI builds against).
 
-| Tool | Version |
-| :-- | :-- |
-| Node.js | ^20.14.0 |
-| npm | ^10.9.2 |
-
-### Command
-
-You can install `mentsu-rootpath` with the following command:
-
-```
+```sh
 npm install @openreachtech/mentsu-rootpath
 ```
+
+It is an ES module (`"type": "module"`); import it with ESM `import` syntax.
 
 ## Usage
 
