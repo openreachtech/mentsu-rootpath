@@ -25,6 +25,10 @@
     "url": "https://github.com/openreachtech/mentsu-rootpath/issues"
   },
   "homepage": "https://github.com/openreachtech/mentsu-rootpath#readme",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=11.16.0"
+  },
   "devDependencies": {
     "@openreachtech/eslint-config": "^4.5.0",
     "@openreachtech/jest-constructor-spy": "^1.1.2",
