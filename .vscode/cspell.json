@@ -6,6 +6,14 @@
     "renchan",
 
     "ehthumbs",
-    "encryptable"
+    "encryptable",
+
+    "codenames",
+    "hostnames",
+
+    "esac",
+    "humanfs",
+    "npmjs",
+    "unbumped"
   ]
 }
