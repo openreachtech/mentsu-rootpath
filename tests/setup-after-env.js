@@ -6,6 +6,12 @@ import {
   ConstructorSpy,
 } from '@openreachtech/jest-constructor-spy'
 
+import {
+  setupExpectEach,
+} from '@openreachtech/jest-expect-each'
+
+setupExpectEach()
+
 /*
  * Set global variables.
  */

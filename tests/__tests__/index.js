@@ -4,7 +4,7 @@ import {
   RootPath,
   rootPath,
   default as rootPathDefault,
-} from '../../index.js'
+} from '../../lib/index.js'
 
 describe('main exports', () => {
   describe('class exports', () => {
